@@ -20,7 +20,7 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
-                <img src="/logo.png" className="w-full" />
+                <img src="/logo-1.png" className="w-full" />
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl">
                 Your image on a{" "}
@@ -126,7 +126,7 @@ export default function Home() {
               </span>{" "}
               say?
             </h2>
-            <img src="/logo.png" className="w-40 order-0 lg:order-2" />
+            <img src="/logo-1.png" className="w-40 order-0 lg:order-2" />
           </div>
 
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
