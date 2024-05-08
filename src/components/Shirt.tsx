@@ -15,8 +15,8 @@ const Shirt = ({ imgSrc, className, dark = false, ...props }: ShirtProps) => {
       )}
       {...props}
     >
-        <img className="pointer-events-none z-50 select-none" src={dark ? "/phone-template-dark-edges.png" : "/phone-template-white-edges.png"} alt="Shirt image" />
-        <div className="absolute -z-10 inset-0">
+        <img className="pointer-events-none z-50 select-none" src={dark ? "/shirt.png" : "/shirt.png"} alt="Shirt image" />
+        <div className="absolute -z-10 inset-0 top-10">
             <img className="object-cover" src={imgSrc} alt="Overlaying shirt image" />
         </div>
     </div>
