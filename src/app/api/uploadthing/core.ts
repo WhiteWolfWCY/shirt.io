@@ -22,7 +22,7 @@ export const ourFileRouter = {
       const { width, height } = imgMetadata;
 
       if (!configId) {
-        const configuration = await db.congiguration.create({
+        const configuration = await db.configuration.create({
           data: {
             imgUrl: file.url,
             height: height || 500,
@@ -32,7 +32,7 @@ export const ourFileRouter = {
 
         return { configId: configuration.id };
       } else {
-        const updatedConfiguration = await db.congiguration.update({
+        const updatedConfiguration = await db.configuration.update({
           where: {
             id: configId,
           },

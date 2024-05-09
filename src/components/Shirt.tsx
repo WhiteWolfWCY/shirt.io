@@ -20,7 +20,7 @@ const Shirt = ({ imgSrc, className, dark = false, ...props }: ShirtProps) => {
         src={dark ? "/shirt.png" : "/shirt.png"}
         alt="Shirt image"
       />
-      <div className="absolute -z-10 inset-0 top-10">
+      <div className="absolute -z-10 inset-3 top-10">
         <img
           className='object-cover min-w-full min-h-full'
           src={imgSrc}
