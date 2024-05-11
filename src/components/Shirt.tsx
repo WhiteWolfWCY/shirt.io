@@ -4,9 +4,10 @@ import { HTMLAttributes } from "react";
 interface ShirtProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string;
   dark?: boolean;
+  imgClassName?: string;
 }
 
-const Shirt = ({ imgSrc, className, dark = false, ...props }: ShirtProps) => {
+const Shirt = ({ imgSrc, className, imgClassName, dark = false, ...props }: ShirtProps) => {
   return (
     <div
       className={cn(
@@ -17,10 +18,10 @@ const Shirt = ({ imgSrc, className, dark = false, ...props }: ShirtProps) => {
     >
       <img
         className="pointer-events-none z-50 select-none"
-        src={dark ? "/shirt.png" : "/shirt.png"}
+        src={dark ? "/shirt-test.png" : "/shirt-test.png"}
         alt="Shirt image"
       />
-      <div className="absolute -z-10 inset-3 top-10">
+      <div className={cn("absolute -z-10 inset-5 top-10", imgClassName)}>
         <img
           className='object-cover min-w-full min-h-full'
           src={imgSrc}

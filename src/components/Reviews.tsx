@@ -103,7 +103,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
       style={{ animationDelay }}
       {...props}
     >
-      <Shirt className="w-full" imgSrc={imgSrc} />
+      <Shirt className="w-full" imgClassName="inset-20 top-14 xs:inset-44 xs:top-14 sm:inset-44 sm:top-14 md:inset-20 md:top-10 lg:inset-14 lg:top-10" imgSrc={imgSrc} />
     </div>
   );
 }
