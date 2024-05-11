@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="bg-slate-50 ">
+    <div className="bg-slate-50 grainy-light">
       <section>
         <MaxWidthWrapper
           className="pb-24 pt-10 lg:grid lg:grid-cols-3 sm:pb-32 
