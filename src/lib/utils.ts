@@ -42,5 +42,6 @@ export function constructMetadata({
       creator: "@WhiteWolf",
     },
     icons,
+    metadataBase: new URL("https://shirt-io.vercel.app/")
   };
 }
