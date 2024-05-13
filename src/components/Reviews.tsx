@@ -97,13 +97,17 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
   return (
     <div
       className={cn(
-        "animate-fade-in rounded-[2.25rem] bg-white p-6 opacity-0 shadow-xl shadow-slate-900/5",
+        "animate-fade-in rounded-[2.25rem] p-6 opacity-0",
         className
       )}
       style={{ animationDelay }}
       {...props}
     >
-      <Shirt className="w-full" imgClassName="inset-20 top-14 xs:inset-44 xs:top-14 sm:inset-44 sm:top-14 md:inset-20 md:top-10 lg:inset-14 lg:top-10" imgSrc={imgSrc} />
+      <div className="w-full flex justify-center min-h-fit">
+        <div className="relative md:max-w-xl">
+          <Shirt className="w-72 mx-auto" imgClassName="inset-20" imgSrc={imgSrc} />
+        </div>
+      </div>
     </div>
   );
 }

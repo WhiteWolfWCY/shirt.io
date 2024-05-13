@@ -167,8 +167,8 @@ const DesignConfigurator = ({
             <NextImage
               fill
               alt="Shirt image"
-              src="/shirt-test.png"
-              className="pointer-events-none z-50 select-none"
+              src="/shirt-new.png"
+              className={cn("pointer-events-none z-30 select-none rounded-xl", `bg-${options.color.tw}`)}
             />
           </AspectRatio>
 
@@ -183,7 +183,7 @@ const DesignConfigurator = ({
             height: imageDimensions.height / 3,
             width: imageDimensions.width / 3,
           }}
-          className="absolute z-30 border-[3px] border-primary"
+          className="absolute z-[40] border-[3px] border-primary"
           lockAspectRatio
           onResizeStop={(_, __, ref, ___, { x, y }) => {
             setRenderedDimension({

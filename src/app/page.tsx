@@ -102,17 +102,13 @@ export default function Home() {
             <div className="relative md:max-w-xl">
               <img
                 src="/your-image.png"
-                className="absolute w-40 lg:w-52 left-72 -top-24 select-none hidden sm:block lg:hidden xl:block"
+                className="absolute w-40 lg:w-52 left-72 z-[9999] -top-24 select-none hidden sm:block lg:hidden xl:block"
               />
               <img
                 src="/line.png"
-                className="absolute w-20 -left-6 -bottom-6 select-none"
+                className="absolute w-20 -left-6 bottom-4 select-none"
               />
-              <Shirt
-                className="w-96"
-                imgClassName="inset-24 top-16"
-                imgSrc="/testimonials/1.jpg"
-              />
+              <Shirt className="w-96" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
         </MaxWidthWrapper>
@@ -240,7 +236,11 @@ export default function Home() {
                 />
               </div>
 
-              <Shirt className="w-120" imgClassName="inset-20 md:inset-14 top-10 md:top-6 lg:inset-24 lg:top-10" imgSrc="/horse_phone.jpg" />
+              <div className="w-full flex justify-center min-h-fit">
+                <div className="relative md:max-w-xl">
+                  <Shirt className="w-96" imgSrc="/horse_phone.jpg" />
+                </div>
+              </div>
             </div>
           </div>
 
