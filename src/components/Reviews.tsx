@@ -105,7 +105,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
     >
       <div className="w-full flex justify-center min-h-fit">
         <div className="relative md:max-w-xl">
-          <Shirt className="w-72 mx-auto" imgClassName="inset-20" imgSrc={imgSrc} />
+          <Shirt className="w-72 mx-auto" imgClassName="inset-24" imgSrc={imgSrc} />
         </div>
       </div>
     </div>
