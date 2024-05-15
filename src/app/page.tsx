@@ -77,10 +77,10 @@ const CARDS = [
         </div>
         <div className="text-sm leading-8">
           <p>
-            "The shirt looks amazing even after almost two years of wearing it.
-            The image is clear and{" "}
+            "I am very satisfied with the quality and design of the shirt{" "}
+            this product is really top-knotch.
             <span className="p-0.5 bg-slate-800 text-white">
-              not a single scratch!
+              I will come back for more!
             </span>{" "}
           </p>
         </div>
@@ -95,9 +95,9 @@ export default function Home() {
       <section>
         <MaxWidthWrapper className="pb-24 pt-24 sm:pb-32 lg:pb-52">
           <div className="flex flex-col items-center justify-center">
-            <img src="/logo-1.png" className="w-32 lg:w-56 rotate-12" />
             <div className="text-center flex flex-col items-center">
-              <h1 className="relative w-fit tracking-tight text-balance font-bold !leading-tight text-gray-900 text-3xl md:text-5xl lg:text-6xl">
+              <img src="/logo-1.png" className="block lg:hidden w-32 lg:w-56 rotate-12" />
+              <h1 className="relative w-fit tracking-tight text-balance font-bold !leading-tight text-gray-900 text-3xl md:text-5xl lg:text-7xl">
                 Your image on a{" "}
                 <span className="text-orange-600 px-2">Custom</span> T-Shirt!
               </h1>
@@ -110,8 +110,9 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col flex-col-reverse justify-center mt-24 gap-12">
-            <div className="col-span-2 flex flex-col justify-center items-center gap-8">
+          <div className="flex flex-col-reverse lg:grid grid-cols-2 justify-center mt-24 gap-12">
+            <div className="col-span-1 flex flex-col mt-8 items-center">
+            <img src="/logo-1.png" className="hidden lg:block w-32 lg:w-56 rotate-12" />
               <ul className="mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start">
                 <div className="space-y-2">
                   <li className="flex gap-1.5 items-center text-left">
@@ -128,7 +129,7 @@ export default function Home() {
                   </li>
                 </div>
               </ul>
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 mt-4">
                 <div className="flex -space-x-4">
                   <img
                     className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
@@ -170,7 +171,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-2 items-center justify-center">
+            <div className="col-span-1 items-center justify-center">
               <CardContainer className="inter-var">
                 <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                   <CardItem
