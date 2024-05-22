@@ -158,7 +158,7 @@ const DesignConfigurator = ({
         className="relative h-[37.5rem] overflow-hidden col-span-2 w-full 
       max-w-4xl flex items-center justify-center rounded-lg border-2 border-dashed border-gray-300 p-12 text-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
       >
-        <div className="relative w-9/12 bg-opacity-50 pointer-events-none aspect-[1635/1831]">
+        <div className="relative w-full md:w-9/12 bg-opacity-50 pointer-events-none aspect-[1635/1831]">
           <AspectRatio
             ref={shirtRef}
             ratio={1635 / 1831}
@@ -172,7 +172,7 @@ const DesignConfigurator = ({
             />
           </AspectRatio>
 
-          <div className="absolute z-[999] inset-0 left-[110px] top-[110px] right-[110px] bottom-[50px] rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]" />
+          <div className="absolute z-[999] inset-0 left-[70px] right-[70px] top-[60px] bottom-[30px] sm:left-[140px] sm:right-[140px] sm:top-[120px] sm:bottom-[50px] md:left-[120px] md:top-[120px] md:right-[120px] md:bottom-[50px] rounded-[32px] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]" />
           <div className="absolute inset-0 left-[3px] top-px r-[3px] bottom-px rounded-[32px] bg-[rgba(229,231,235,0.6)] shadow-[0_0_0_99999px_rgba(229,231,235,0.6)]" />
         </div>
 
